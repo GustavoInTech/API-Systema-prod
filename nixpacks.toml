@@ -1,0 +1,4 @@
+providers = ["java"]
+
+[phases.setup]
+nixPkgs = ["jdk8_headless"]
