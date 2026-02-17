@@ -5,7 +5,8 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
 @ConfigurationProperties("moneyflow")
 public class MoneyflowApiProperty {
 
-    private String origemPermitida = "http://localhost:4200";
+    private String origemPermitida = "http://localhost:4200"; // TODO: OBS em produção
+
     private final Seguranca seguranca = new Seguranca();
 
     public Seguranca getSeguranca() {
